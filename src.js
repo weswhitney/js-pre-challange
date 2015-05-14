@@ -1,7 +1,7 @@
 module.exports = {
 
-  largestPhoneNumber: function() {
-    return "Hello World"
+  largestPhoneNumber: function(number) {
+    return number
   },
 
 }
