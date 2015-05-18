@@ -1,7 +1,8 @@
 module.exports = {
 
   largestPhoneNumber: function(number) {
-    return number
+    var numberNoDash = number.replace(/^D/,'')
+    return numberNoDash
   },
 
 }
