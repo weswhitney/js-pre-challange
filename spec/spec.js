@@ -61,7 +61,7 @@ xit("it turns the strings into arrays of numbers", function () {
   )).toEqual(50);
   });
 
-  it("it turns the strings into arrays of numbers", function () {
+  xit("it turns the strings into arrays of numbers", function () {
     expect(yourCode.largestPhoneNumber(
     [
     '555-555-5555',
@@ -71,7 +71,7 @@ xit("it turns the strings into arrays of numbers", function () {
   )).toEqual(0);
   });
 
-  it("it turns the strings into arrays of numbers", function () {
+  xit("it turns the strings into arrays of numbers", function () {
     expect(yourCode.largestPhoneNumber(
     [
     '111-111-1111',
@@ -79,6 +79,16 @@ xit("it turns the strings into arrays of numbers", function () {
     '555-555-5555'
     ]
   )).toEqual(2);
+  });
+
+  it("it turns the strings into arrays of numbers", function () {
+    expect(yourCode.largestPhoneNumber(
+    [
+    '111-111-1111',
+    '222-121-2121',
+    '555-555-5555'
+    ]
+  )).toEqual('555-555-5555');
   });
 
 });
