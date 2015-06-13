@@ -1,13 +1,18 @@
 module.exports = {
 
   largestPhoneNumber: function(arrayOfNumbers) {
-    var arrayNoDash = [];
-    for (var j = 0; j <= arrayOfNumbers.length - 1; j++) {
-      arrayNoDash.push(arrayOfNumbers[j].replace(/[\D]/g, ""));
-      console.log(arrayNoDash);
+    var arrayOfSums = [], splitArray = [], sum = [];
+
+      for (var j = 0; j <= arrayOfNumbers.length - 1; j++) {
+        arrayOfSums.push(arrayOfNumbers[j].replace(/[\D]/g, "").split("").map(Number).reduce(function (pv, cv) { return pv + cv; }, 0));
+        // for (var i = 0; i <= arrayOfSums.length - 1; i++) {
+        // }
+      }
+      largestSum = function (arrayOfSums) {
+        return Math.max.apply(null, arrayOfSums);
+      }
+      return largestSum(arrayOfSums);
     }
-    return arrayNoDash;
-  }
 }
 
 
