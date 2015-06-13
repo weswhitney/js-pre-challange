@@ -84,11 +84,12 @@ xit("it turns the strings into arrays of numbers", function () {
   it("it turns the strings into arrays of numbers", function () {
     expect(yourCode.largestPhoneNumber(
     [
+    '555-555-5555',
     '111-111-1111',
-    '222-121-2121',
-    '555-555-5555'
+    '555-555-5456',
+    '222-121-2121'
     ]
-  )).toEqual('555-555-5555');
+  )).toEqual('555-555-5456');
   });
 
 });
