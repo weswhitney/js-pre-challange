@@ -8,10 +8,11 @@ module.exports = {
         // for (var i = 0; i <= arrayOfSums.length - 1; i++) {
         // }
       }
-      largestSum = function (arrayOfSums) {
-        return Math.max.apply(null, arrayOfSums);
-      }
-      return largestSum(arrayOfSums);
+      // largestSum = function (arrayOfSums) {
+        var i = arrayOfSums.indexOf(Math.max.apply(Math, arrayOfSums));
+      // }
+      // return largestSum(arrayOfSums);
+      return i;
     }
 }
 
